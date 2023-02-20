@@ -11,17 +11,17 @@
 	let tasks = [];
 	let task = "";
 
-	onMount(() => {
-		const existingReminders = localStorage.getItem("reminders");
-		tasks = JSON.parse(existingReminders) || [];
-	});
+	// onMount(() => {
+	// 	const existingReminders = localStorage.getItem("reminders");
+	// 	tasks = JSON.parse(existingReminders) || [];
+	// });
 
 	const handleOnSubmit = (e: any) => {
 		task = e.target[0].value.trim();
 
 		if (!tasks.includes(task) && task !== "") {
 			tasks = [...tasks, task];
-			localStorage.setItem("reminders", JSON.stringify(tasks));
+			// localStorage.setItem("reminders", JSON.stringify(tasks));
 		}
 
 		task = "";
@@ -30,7 +30,7 @@
 	const removeTask = (e: any) => {
 		let removed_task = e.target.innerText;
 		tasks = [...remove(tasks, removed_task)];
-		localStorage.setItem("reminders", JSON.stringify(tasks));
+		// localStorage.setItem("reminders", JSON.stringify(tasks));
 	};
 </script>
 
