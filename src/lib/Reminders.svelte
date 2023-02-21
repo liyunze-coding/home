@@ -108,7 +108,7 @@
 	.task {
 		width: fit-content;
 		max-width: 250px;
-		border-bottom: solid 2px #242424;
+		/* border-bottom: solid 2px #242424; */
 		margin-top: 5px;
 		margin-left: 5%;
 
@@ -120,6 +120,6 @@
 	}
 
 	.task:hover {
-		border-bottom: solid 2px white;
+		text-decoration: line-through #fafafa solid 2px;
 	}
 </style>

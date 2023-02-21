@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
+	const quotes = new URL("../assets/quotes.txt", import.meta.url).href;
+
 	function readTextFile(file: string) {
 		var rawFile = new XMLHttpRequest();
 		rawFile.open("GET", file, false);
@@ -25,7 +27,7 @@
 	}
 
 	onMount(() => {
-		readTextFile("./src/assets/quotes.txt");
+		readTextFile(quotes);
 	});
 </script>
 
