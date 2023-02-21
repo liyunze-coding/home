@@ -75,7 +75,7 @@
 		{hour_display}<span class="blink">:</span>{minute_display}
 		{am_pm_display}
 	</h1>
-	<h2>Good {greeting}, Ryan</h2>
+	<h2>Good {greeting}, <br /><br /> hope you're feeling well ♡</h2>
 </div>
 
 <style>
