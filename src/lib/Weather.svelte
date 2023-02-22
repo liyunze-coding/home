@@ -186,7 +186,7 @@
 
 	#weather-info {
 		font-weight: bold;
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 
 	#weather-search {

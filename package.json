@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "push":"git push -u origin main",
-    "gh-push": "git subtree push --prefix dist origin gh-pages"
+    "gh-pages-push": "git subtree push --prefix dist origin gh-pages"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.0",
