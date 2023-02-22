@@ -16,9 +16,12 @@
 					let quote =
 						quotes[Math.floor(Math.random() * quotes.length)];
 
+					// remove \n from quote
+					quote = quote.replace(/(\r\n|\n|\r)/gm, "");
+
 					document.getElementById(
 						"quote"
-					).innerText = `${quote}`;
+					).innerText = `"${quote}"`;
 				}
 			}
 		};
@@ -31,11 +34,15 @@
 	});
 </script>
 
-<p id="quote" />
+<main>
+	<p id="quote" />
+</main>
 
 <style>
 	#quote {
+		font-family: sans-serif;
 		font-size: 15px;
+		font-style: italic;
 
 		color: #fafafa;
 	}

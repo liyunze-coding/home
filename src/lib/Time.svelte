@@ -70,17 +70,21 @@
 	})();
 </script>
 
-<div id="main-div">
+<main>
 	<h1>
 		{hour_display}<span class="blink">:</span>{minute_display}
 		{am_pm_display}
 	</h1>
-	<h2>Good {greeting}, <br /><br /> hope you're feeling well ♡</h2>
-</div>
+	<h2>
+		Good {greeting}
+	</h2>
+	<p>hope you're feeling well ♡</p>
+</main>
 
 <style>
 	h1,
-	h2 {
+	h2,
+	p {
 		font-family: "Courier New", Courier, monospace;
 		text-align: center;
 	}
@@ -93,7 +97,11 @@
 		font-size: 2em;
 	}
 
-	#main-div {
+	p {
+		font-size: 1.2em;
+	}
+
+	main {
 		margin: 0;
 		padding: 0;
 	}
