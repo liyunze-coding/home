@@ -11,9 +11,13 @@ Demo is hosted [here](https://ryanpython.me/inertia)
 ## Commands
 
 `npm install` : Install dependencies
+
 `npm run dev` : Run development server
+
 `npm run build` : Build for production
+
 `npm run push-commit` : Push to GitHub and commit to main branch
+
 `npm run deploy` : Deploy to GitHub Pages
 
 ## Features
